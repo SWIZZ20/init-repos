@@ -1,0 +1,576 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+<!-- Basic Page Needs
+================================================== -->
+<title>Travailleur</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<!-- CSS
+================================================== -->
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/colors/blue.css">
+
+</head>
+<body class="gray">
+
+<!-- Wrapper -->
+<div id="wrapper">
+
+<!-- Header Container
+================================================== -->
+<header id="header-container" class="fullwidth not-sticky">
+
+	<!-- Header -->
+	<div id="header">
+		<div class="container">
+			
+			<!-- Left Side Content -->
+			<div class="left-side">
+				
+				<!-- Logo -->
+				<div id="logo">
+					<a href="index.html"><img src="images/logo.png" alt=""></a>
+				</div>
+				<!-- Main Navigation -->
+				<nav id="navigation">
+					<ul id="responsive">
+
+						<li><a href="index.html" class="current">Accueil</a></li>
+
+						
+						<li><a href="freelancers-grid-layout-full-page.html">Rechercher un Freelancer</a></li>
+
+						<li><a href="dashboard.html">Tableau de Bord</a></li>
+                    <li> <a href="index-2.html" class="btn btn-link">Je suis Freelancer</a> </li>
+
+					</ul>
+                
+				</nav>
+				<div class="clearfix">
+            
+           
+            </div>
+				
+			</div>
+			<!-- Left Side Content / End -->
+
+
+			<!-- Right Side Content / End -->
+			<!-- Right Side Content / End -->
+
+		</div>
+	</div>
+	<!-- Header / End -->
+
+</header>
+<div class="clearfix"></div>
+<!-- Header Container / End -->
+
+<!-- Page Content
+================================================== -->
+<div class="full-page-container">
+
+	<div class="full-page-sidebar">
+		<div class="full-page-sidebar-inner" data-simplebar>
+			<div class="sidebar-container">
+				
+				<!-- Location -->
+				<div class="sidebar-widget">
+					<h3>Location</h3>
+					<div class="input-with-icon">
+						<div id="autocomplete-container">
+							<input id="autocomplete-input" type="text" placeholder="Localisation">
+						</div>
+						<i class="icon-material-outline-location-on"></i>
+					</div>
+				</div>
+
+				<!-- Category -->
+				<div class="sidebar-widget">
+					<h3>Categories</h3>
+					<select class="selectpicker default" multiple data-selected-text-format="count" data-size="7" title="Toutes les catégories" >
+						<option>Support d'administration</option>
+						<option>Service clientèle</option>
+						<option>Données analyytiques</option>
+						<option>Design & Creatif</option>
+						<option>Légal</option>
+						<option>Développemnt de logiciel</option>
+						<option>IT & Reseaux</option>
+						<option>Rédaction</option>
+						<option>Traduction</option>
+						<option>Ventes & Marketing</option>
+					</select>
+				</div>
+
+				<!-- Keywords -->
+				<div class="sidebar-widget">
+					<h3>Mots-clés</h3>
+					<div class="keywords-container">
+						<div class="keyword-input-container">
+							<input type="text" class="keyword-input" placeholder="ex titre de la tâche"/>
+							<button class="keyword-input-button ripple-effect"><i class="icon-material-outline-add"></i></button>
+						</div>
+						<div class="keywords-list"><!-- keywords go here --></div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+
+
+				<!-- Hourly Rate -->
+				<div class="sidebar-widget">
+					<h3>Taux horaire</h3>
+					<div class="margin-top-55"></div>
+
+					<!-- Range Slider -->
+					<input class="range-slider" type="text" value="" data-slider-currency="$" data-slider-min="10" data-slider-max="250" data-slider-step="5" data-slider-value="[10,250]"/>
+				</div>
+
+				<!-- Tags -->
+				<div class="sidebar-widget">
+					<h3>Compétences</h3>
+
+					<div class="tags-container">
+						<div class="tag">
+							<input type="checkbox" id="tag1"/>
+							<label for="tag1">développeur front-end</label>
+						</div>
+						<div class="tag">
+							<input type="checkbox" id="tag2"/>
+							<label for="tag2">angular</label>
+						</div>
+						<div class="tag">
+							<input type="checkbox" id="tag3"/>
+							<label for="tag3">react</label>
+						</div>
+						<div class="tag">
+							<input type="checkbox" id="tag4"/>
+							<label for="tag4">vue js</label>
+						</div>
+						<div class="tag">
+							<input type="checkbox" id="tag5"/>
+							<label for="tag5">applications web</label>
+						</div>
+						<div class="tag">
+							<input type="checkbox" id="tag6"/>
+							<label for="tag6">design</label>
+						</div>
+						<div class="tag">
+							<input type="checkbox" id="tag7"/>
+							<label for="tag7">wordpress</label>
+						</div>
+					</div>
+					<div class="clearfix"></div>
+
+					<!-- More Skills -->
+					<div class="keywords-container margin-top-20">
+						<div class="keyword-input-container">
+							<input type="text" class="keyword-input" placeholder="ajouter plus de compétences"/>
+							<button class="keyword-input-button ripple-effect"><i class="icon-material-outline-add"></i></button>
+						</div>
+						<div class="keywords-list"><!-- keywords go here --></div>
+						<div class="clearfix"></div>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+
+				<div class="margin-bottom-40"></div>
+
+			</div>
+			<!-- Sidebar Container / End -->
+
+			<!-- Search Button -->
+			<!-- Search Button / End-->
+
+		</div>
+	</div>
+	<!-- Full Page Sidebar / End -->
+	
+	<!-- Full Page Content -->
+	<div class="full-page-content-container" data-simplebar>
+		<div class="full-page-content-inner">
+
+			<h3 class="page-title">Resultats de recherche</h3>
+
+			<div class="notify-box margin-top-15">
+				<div class="switch-container">
+					<label class="switch"><input type="checkbox"><span class="switch-button"></span><span class="switch-text">Activer les alertes e-mail pour cette recherche</span></label>
+				</div>
+
+				<div class="sort-by">
+					<span>Tirer par:</span>
+					<select class="selectpicker hide-tick">
+						<option>Pertinence</option>
+						<option>Plus réçents</option>
+						<option>Plus ançiens</option>
+						<option>Au hasard</option>
+					</select>
+				</div>
+			</div>
+
+			<!-- Freelancers List Container -->
+			<div class="freelancers-container freelancers-grid-layout margin-top-35">
+				
+				<!--Freelancer -->
+				<div class="freelancer">
+
+					<!-- Overview -->
+					<div class="freelancer-overview">
+						<div class="freelancer-overview-inner">
+							
+							<!-- Bookmark Icon -->
+							<span class="bookmark-icon"></span>
+							
+							<!-- Avatar -->
+							<div class="freelancer-avatar">
+								<div class="verified-badge"></div>
+								<a href="single-freelancer-profile.html"><img src="images/user-avatar-big-01.jpg" alt=""></a>
+							</div>
+
+							<!-- Name -->
+							<div class="freelancer-name">
+								<h4><a href="single-freelancer-profile.html">Tom Smith <img class="flag" src="images/flags/gb.svg" alt="" title="United Kingdom" data-tippy-placement="top"></a></h4>
+								<span>UI/UX Designer</span>
+							</div>
+
+							<!-- Rating -->
+							<div class="freelancer-rating">
+								<div class="star-rating" data-rating="4.9"></div>
+							</div>
+						</div>
+					</div>
+					
+					<!-- Details -->
+					<div class="freelancer-details">
+						<div class="freelancer-details-list">
+							<ul>
+								<li>Localisation <strong><i class="icon-material-outline-location-on"></i> London</strong></li>
+								<li>taux <strong>$60 / hr</strong></li>
+								<li>Réussite professionnelle <strong>95%</strong></li>
+							</ul>
+						</div>
+						<a href="single-freelancer-profile.html" class="button button-sliding-icon ripple-effect">Voir Profil <i class="icon-material-outline-arrow-right-alt"></i></a>
+					</div>
+				</div>
+				<!-- Freelancer / End -->
+
+				<!--Freelancer -->
+				<div class="freelancer">
+
+					<!-- Overview -->
+					<div class="freelancer-overview">
+						<div class="freelancer-overview-inner">
+							
+							<!-- Bookmark Icon -->
+							<span class="bookmark-icon"></span>
+							
+							<!-- Avatar -->
+							<div class="freelancer-avatar">
+								<div class="verified-badge"></div>
+								<a href="single-freelancer-profile.html"><img src="images/user-avatar-big-02.jpg" alt=""></a>
+							</div>
+
+							<!-- Name -->
+							<div class="freelancer-name">
+								<h4><a href="#">David Peterson <img class="flag" src="images/flags/de.svg" alt="" title="Germany" data-tippy-placement="top"></a></h4>
+								<span>iOS Expert + Node Dev</span>
+							</div>
+
+							<!-- Rating -->
+							<div class="freelancer-rating">
+								<div class="star-rating" data-rating="4.2"></div>
+							</div>
+						</div>
+					</div>
+					
+					<!-- Details -->
+					<div class="freelancer-details">
+						<div class="freelancer-details-list">
+							<ul>
+								<li>Localisation <strong><i class="icon-material-outline-location-on"></i> Berlin</strong></li>
+								<li>Taux <strong>$40 / hr</strong></li>
+								<li>Réussite professionnelle <strong>88%</strong></li>
+							</ul>
+						</div>
+						<a href="single-freelancer-profile.html" class="button button-sliding-icon ripple-effect">Voir Profile <i class="icon-material-outline-arrow-right-alt"></i></a>
+					</div>
+				</div>
+				<!-- Freelancer / End -->
+
+				<!--Freelancer -->
+				<div class="freelancer">
+
+					<!-- Overview -->
+					<div class="freelancer-overview">
+						<div class="freelancer-overview-inner">
+							<!-- Bookmark Icon -->
+							<span class="bookmark-icon"></span>
+							
+							<!-- Avatar -->
+							<div class="freelancer-avatar">
+								<a href="single-freelancer-profile.html"><img src="images/user-avatar-placeholder.png" alt=""></a>
+							</div>
+
+							<!-- Name -->
+							<div class="freelancer-name">
+								<h4><a href="#">Marcin Kowalski <img class="flag" src="images/flags/pl.svg" alt="" title="Poland" data-tippy-placement="top"></a></h4>
+								<span>Front-End Developer</span>
+							</div>
+
+							<!-- Rating -->
+							<span class="company-not-rated margin-bottom-5">Minimum de 3 votes requis</span>
+						</div>
+					</div>
+					
+					<!-- Details -->
+					<div class="freelancer-details">
+						<div class="freelancer-details-list">
+							<ul>
+								<li>Localisation <strong><i class="icon-material-outline-location-on"></i> Warsaw</strong></li>
+								<li>Taux <strong>$50 / hr</strong></li>
+								<li>Réussite professionnelle <strong>100%</strong></li>
+							</ul>
+						</div>
+						<a href="single-freelancer-profile.html" class="button button-sliding-icon ripple-effect">Voir Profil <i class="icon-material-outline-arrow-right-alt"></i></a>
+					</div>
+				</div>
+				<!-- Freelancer / End -->
+
+				<!--Freelancer -->
+				<div class="freelancer">
+
+					<!-- Overview -->
+					<div class="freelancer-overview">
+							<div class="freelancer-overview-inner">
+							<!-- Bookmark Icon -->
+							<span class="bookmark-icon"></span>
+							
+							<!-- Avatar -->
+							<div class="freelancer-avatar">
+								<div class="verified-badge"></div>
+								<a href="single-freelancer-profile.html"><img src="images/user-avatar-big-03.jpg" alt=""></a>
+							</div>
+
+							<!-- Name -->
+							<div class="freelancer-name">
+								<h4><a href="#">Sindy Forest <img class="flag" src="images/flags/au.svg" alt="" title="Australia" data-tippy-placement="top"></a></h4>
+								<span>Magento Certified Developer</span>
+							</div>
+
+							<!-- Rating -->
+							<div class="freelancer-rating">
+								<div class="star-rating" data-rating="5.0"></div>
+							</div>
+						</div>
+					</div>
+					
+					<!-- Details -->
+					<div class="freelancer-details">
+						<div class="freelancer-details-list">
+							<ul>
+								<li>Localisation <strong><i class="icon-material-outline-location-on"></i> Brisbane</strong></li>
+								<li>Taux <strong>$70 / hr</strong></li>
+								<li>Réussite professionnelle <strong>100%</strong></li>
+							</ul>
+						</div>
+						<a href="single-freelancer-profile.html" class="button button-sliding-icon ripple-effect">Voir Profil <i class="icon-material-outline-arrow-right-alt"></i></a>
+					</div>
+				</div>
+				<!-- Freelancer / End -->
+				
+				<!--Freelancer -->
+				<div class="freelancer">
+
+					<!-- Overview -->
+					<div class="freelancer-overview">
+							<div class="freelancer-overview-inner">
+							<!-- Bookmark Icon -->
+							<span class="bookmark-icon"></span>
+							
+							<!-- Avatar -->
+							<div class="freelancer-avatar">
+								<a href="single-freelancer-profile.html"><img src="images/user-avatar-placeholder.png" alt=""></a>
+							</div>
+
+							<!-- Name -->
+							<div class="freelancer-name">
+								<h4><a href="#">Sebastiano Piccio <img class="flag" src="images/flags/it.svg" alt="" title="Italy" data-tippy-placement="top"></a></h4>
+								<span>Laravel Dev</span>
+							</div>
+
+							<!-- Rating -->
+							<div class="freelancer-rating">
+								<div class="star-rating" data-rating="4.5"></div>
+							</div>
+						</div>
+					</div>
+					
+					<!-- Details -->
+					<div class="freelancer-details">
+						<div class="freelancer-details-list">
+							<ul>
+								<li>Localisation <strong><i class="icon-material-outline-location-on"></i> Milan</strong></li>
+								<li>Taux <strong>$80 / hr</strong></li>
+								<li>Réussite professionnelle <strong>89%</strong></li>
+							</ul>
+						</div>
+						<a href="single-freelancer-profile.html" class="button button-sliding-icon ripple-effect">Voir Profil <i class="icon-material-outline-arrow-right-alt"></i></a>
+					</div>
+				</div>
+				<!-- Freelancer / End -->
+							
+				<!--Freelancer -->
+				<div class="freelancer">
+
+					<!-- Overview -->
+					<div class="freelancer-overview">
+							<div class="freelancer-overview-inner">
+							<!-- Bookmark Icon -->
+							<span class="bookmark-icon"></span>
+							
+							<!-- Avatar -->
+							<div class="freelancer-avatar">
+								<a href="single-freelancer-profile.html"><img src="images/user-avatar-placeholder.png" alt=""></a>
+							</div>
+
+							<!-- Name -->
+							<div class="freelancer-name">
+								<h4><a href="#">Gabriel Lagueux <img class="flag" src="images/flags/fr.svg" alt="" title="France" data-tippy-placement="top"></a></h4>
+								<span>WordPress Expert</span>
+							</div>
+
+							<!-- Rating -->
+							<div class="freelancer-rating">
+								<div class="star-rating" data-rating="5.0"></div>
+							</div>
+						</div>
+					</div>
+					
+					<!-- Details -->
+					<div class="freelancer-details">
+						<div class="freelancer-details-list">
+							<ul>
+								<li>Localisation <strong><i class="icon-material-outline-location-on"></i> Paris</strong></li>
+								<li>Taux <strong>$50 / hr</strong></li>
+								<li>Réussite professionnelle <strong>100%</strong></li>
+							</ul>
+						</div>
+						<a href="single-freelancer-profile.html" class="button button-sliding-icon ripple-effect">Voir Profil <i class="icon-material-outline-arrow-right-alt"></i></a>
+					</div>
+				</div>
+				<!-- Freelancer / End -->
+	
+			</div>
+			<!-- Freelancers Container / End -->
+
+			<!-- Pagination -->
+			<div class="clearfix"></div>
+			<div class="pagination-container margin-top-20 margin-bottom-20">
+				<nav class="pagination">
+					<ul>
+						<li class="pagination-arrow"><a href="#" class="ripple-effect"><i class="icon-material-outline-keyboard-arrow-left"></i></a></li>
+						<li><a href="#" class="ripple-effect">1</a></li>
+						<li><a href="#" class="ripple-effect current-page">2</a></li>
+						<li><a href="#" class="ripple-effect">3</a></li>
+						<li><a href="#" class="ripple-effect">4</a></li>
+						<li class="pagination-arrow"><a href="#" class="ripple-effect"><i class="icon-material-outline-keyboard-arrow-right"></i></a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="clearfix"></div>
+			<!-- Pagination / End -->
+
+			<!-- Footer -->
+			<div class="small-footer margin-top-15">
+				<div class="small-footer-copyrights">
+					© 2018 <strong></strong>. Tous droits réservés.
+				</div>
+				<ul class="footer-social-links">
+					<li>
+						<a href="#" title="Facebook" data-tippy-placement="top">
+							<i class="icon-brand-facebook-f"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#" title="Twitter" data-tippy-placement="top">
+							<i class="icon-brand-twitter"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#" title="Google Plus" data-tippy-placement="top">
+							<i class="icon-brand-google-plus-g"></i>
+						</a>
+					</li>
+					<li>
+						<a href="#" title="LinkedIn" data-tippy-placement="top">
+							<i class="icon-brand-linkedin-in"></i>
+						</a>
+					</li>
+				</ul>
+				<div class="clearfix"></div>
+			</div>
+			<!-- Footer / End -->
+
+		</div>
+	</div>
+	<!-- Full Page Content / End -->
+
+</div>
+
+
+</div>
+<!-- Wrapper / End -->
+
+<!-- Scripts
+================================================== -->
+<script src="js/jquery-3.3.1.min.js"></script>
+<script src="js/jquery-migrate-3.0.0.min.js"></script>
+<script src="js/mmenu.min.js"></script>
+<script src="js/tippy.all.min.js"></script>
+<script src="js/simplebar.min.js"></script>
+<script src="js/bootstrap-slider.min.js"></script>
+<script src="js/bootstrap-select.min.js"></script>
+<script src="js/snackbar.js"></script>
+<script src="js/clipboard.min.js"></script>
+<script src="js/counterup.min.js"></script>
+<script src="js/magnific-popup.min.js"></script>
+<script src="js/slick.min.js"></script>
+<script src="js/custom.js"></script>
+
+<!-- Snackbar // documentation: https://www.polonel.com/snackbar/ -->
+<script>
+// Snackbar for user status switcher
+$('.status-switch label').click(function() { 
+	Snackbar.show({
+		text: 'Your status has been changed!',
+		pos: 'bottom-center',
+		showAction: false,
+		actionText: "Dismiss",
+		duration: 3000,
+		textColor: '#fff',
+		backgroundColor: '#383838'
+	}); 
+});
+</script>
+
+<!-- Google Autocomplete -->
+<script>
+	function initAutocomplete() {
+		 var options = {
+		  types: ['(cities)'],
+		  // componentRestrictions: {country: "us"}
+		 };
+
+		 var input = document.getElementById('autocomplete-input');
+		 var autocomplete = new google.maps.places.Autocomplete(input, options);
+	}
+</script>
+
+<!-- Google API & Maps -->
+<!-- Geting an API Key: https://developers.google.com/maps/documentation/javascript/get-api-key -->
+<script src="https://maps.googleapis.com/maps/api/js?key=&libraries=places"></script>
+
+</body>
+</html>

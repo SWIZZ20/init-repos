@@ -1,0 +1,7 @@
+AuthName "demo.vyconsulting-group.com statistics"
+AuthType Basic
+AuthUserFile /home/vyconsulting-group/domains/demo.vyconsulting-group.com/.stats-htpasswd
+require valid-user
+<Files .stats-htpasswd>
+deny from all
+</Files>
